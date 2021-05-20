@@ -1,0 +1,33 @@
+{
+  "name": "ep_linkify2",
+  "description": "Adds internal links to etherpad lite. To create internal links use [[example]] style formatting",
+  "version": "0.1.2",
+  "author": "risacher <dan@risacher.org>",
+  "contributors": [
+  	{
+		"name": "Matthias Bartelmeß",
+  		"email": "mba@fourplusone.de"
+	},
+        {
+                "name": "John McLear",
+                "email": "john@mclear.co.uk"
+        },
+        {
+                "name": "Dan Risacher",
+                "email": "dan@risacher.org"
+        }
+  ],
+  "dependencies": {},
+  "peerDependencies": {
+    "ep_etherpad-lite": ">=1.8.6"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "homepage": "https://github.com/risacher/ep_linkify2",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/risacher/ep_linkify2.git"
+  }
+}
