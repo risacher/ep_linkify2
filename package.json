@@ -1,7 +1,7 @@
 {
   "name": "ep_linkify2",
   "description": "Adds internal links to etherpad lite. To create internal links use [[example]] style formatting",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "risacher <dan@risacher.org>",
   "contributors": [
   	{
@@ -19,7 +19,7 @@
   ],
   "dependencies": {},
   "peerDependencies": {
-    "ep_etherpad-lite": ">=1.8.6"
+    "ep_etherpad-lite": ">=1.8.18"
   },
   "engines": {
     "node": "*"
