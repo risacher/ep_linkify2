@@ -3,7 +3,7 @@ var Security = require('ep_etherpad-lite/static/js/security');
 
 /* Define the regular expressions we will use to detect if a string looks like a reference to a pad IE [[foo]] */
 var internalHrefRegexp = new RegExp(/\[\[([^\]]+)\]\]/g);
-var timesliderRegexp = new RegExp(/p\/[^\/]*\/timeslider/g);
+var timesliderRegexp = new RegExp(/p\/[^\/]*\/timeslider/);
 
 /* Take the string and remove the first and last 2 characters IE [[foo]] returns foo */
 var linkSanitizingFn = function(result){
@@ -56,7 +56,7 @@ exports.aceCreateDomLine = function(name, context){
   
   if (internalHref)
   {
-    var url = (inTimeslider ? '../' : './') + internalHref;
+    var url = (inTimeslider ? '../../p/' : '../p/') + internalHref;
     var modifier = {
       extraOpenTags: '<a href="' + Security.escapeHTMLAttribute(url) +'">',
       extraCloseTags: '</a>',
